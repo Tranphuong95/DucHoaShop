@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.regitiny.duchoashop",
+      "nativeLanguage": "vi"
+    },
+    "jhipsterVersion": "6.10.4",
+    "applicationType": "monolith",
+    "baseName": "DucHoaShop",
+    "packageName": "org.regitiny.duchoashop",
+    "packageFolder": "org/regitiny/duchoashop",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "redis",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NjczZGUzMmRmYzU0YTFlZTA2NDYzOGM1NDlkODAyYzFkNDk1Nzg5ZWMzNTYzMjNjYzE4ZDE3M2NjZTA1NWMzMmI1ODRhYmZkYjUwNTE4YzVmYzQ3Yjk4M2MzOWNiM2FjOTg5MzMwZGEwMDBmNDJlOTZjMDhkYjlhMjA4NmJjMjI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "cerulean",
+    "clientThemeVariant": "light",
+    "creationTimestamp": 1605375598118,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "vi",
+    "languages": ["vi", "en"],
+    "blueprints": []
+  }
+}
