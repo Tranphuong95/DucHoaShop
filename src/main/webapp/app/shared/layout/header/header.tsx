@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink as Link } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading-bar';
 
-import {Home, Brand, Product, Contact, Introduction} from './header-components';
+import {Home, Brand, Products, Contact, Introduction} from './header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from '../menus';
 
 export interface IHeaderProps {
@@ -73,7 +73,7 @@ const Header = (props: IHeaderProps) => {
           <Nav className="ml-auto " navbar>
             <Home/>
             <Introduction/>
-            <Product/>
+            <Products/>
             <Contact/>
             {props.isAuthenticated && <EntitiesMenu />} {/*entity*/}
             {props.isAuthenticated && props.isAdmin && (

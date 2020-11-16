@@ -30,21 +30,21 @@ export const Home = props => (
 export const Introduction=props=>(
   <NavItem>
     <NavLink tag={Link} to={"/"} className="d-flex align-items-center">
-      <span>Gioi thieu</span>
+      <Translate contentKey="global.menu.introduce">Introduce</Translate>
     </NavLink>
   </NavItem>
 );
-export const Product=props=>(
+export const Products=props=>(
   <NavItem>
     <NavLink tag={Link} to={"/"} className="d-flex align-items-center">
-      <span>San pham</span>
+      <Translate contentKey="global.menu.products">Products</Translate>
     </NavLink>
   </NavItem>
 );
 export const Contact=props=>(
   <NavItem>
     <NavLink tag={Link} to={"/"} className="d-flex align-items-center">
-      <span>Lien he</span>
+      <Translate contentKey="global.menu.contact">Contact</Translate>
     </NavLink>
   </NavItem>
 )
