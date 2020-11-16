@@ -64,9 +64,9 @@ const Header = (props: IHeaderProps) => {
     //   </Navbar>
     // </div>
     <div id="app-header">
-     {/*{ renderDevRibbon()}*/}
-      {/*<LoadingBar className="loading-bar" />*/}
-      <Navbar fixed="top" expand="sm" className="shop-header bg-warning col-8">
+     { renderDevRibbon()}
+      <LoadingBar className="loading-bar" />
+      <Navbar fixed="top" expand="sm" className="shop-header bg-warning col-9">
         <NavbarToggler aria-label="menu" onClick={toggleMenu} />
         <Brand/>
         <Collapse id="header-tabs" isOpen={menuOpen} navbar>
