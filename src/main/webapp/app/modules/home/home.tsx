@@ -15,6 +15,7 @@ export const Home = (props: IHomeProp) => {
 
   return (
    <div></div>
+
   );
 };
 

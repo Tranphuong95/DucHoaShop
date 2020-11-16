@@ -18,6 +18,7 @@ import { hasAnyAuthority } from 'app/shared/auth/private-route';
 import ErrorBoundary from 'app/shared/error/error-boundary';
 import { AUTHORITIES } from 'app/config/constants';
 import AppRoutes from 'app/routes';
+import Banner from "app/shared/layout/banner/banner";
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
@@ -45,15 +46,17 @@ export const App = (props: IAppProps) => {
             isInProduction={props.isInProduction}
             isSwaggerEnabled={props.isSwaggerEnabled}
           />
+          <Banner/>
+          <AppRoutes /> {/*ban đầu không có ở đây*/}
         </ErrorBoundary>
-        <div className="container-fluid view-container" id="app-view-container">
-          <Card className="jh-card">
-            <ErrorBoundary>
-              <AppRoutes />
-            </ErrorBoundary>
-          </Card>
-          <Footer />
-        </div>
+        {/*<div className="container-fluid view-container" id="app-view-container">*/}
+        {/*  <Card className="jh-card">*/}
+        {/*    <ErrorBoundary>*/}
+        {/*      <AppRoutes />*/}
+        {/*    </ErrorBoundary>*/}
+        {/*  </Card>*/}
+        {/*  <Footer />/*/}
+        {/*</div>*/}
       </div>
     </Router>
   );
