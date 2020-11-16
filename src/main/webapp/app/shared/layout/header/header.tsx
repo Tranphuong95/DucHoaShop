@@ -2,13 +2,13 @@ import './header.scss';
 
 import React, { useState } from 'react';
 import { Translate, Storage } from 'react-jhipster';
-import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse } from 'reactstrap';
+import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse, NavItem, NavLink, UncontrolledDropdown,DropdownToggle,DropdownMenu,DropdownItem,NavbarText } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { NavLink as Link } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading-bar';
 
-import { Home, Brand } from './header-components';
+import {Home, Brand, Product, Contact, Introduction} from './header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from '../menus';
 
 export interface IHeaderProps {
@@ -44,26 +44,49 @@ const Header = (props: IHeaderProps) => {
   /* jhipster-needle-add-element-to-menu - JHipster will add new menu items here */
 
   return (
+    // <div id="app-header">
+    //   {renderDevRibbon()}
+    //   <LoadingBar className="loading-bar" />
+    //   <Navbar light expand="sm" fixed="top" className="bg-light">
+    //     <NavbarToggler aria-label="Menu" onClick={toggleMenu} />
+    //     <Brand />
+    //     <Collapse isOpen={menuOpen} navbar>
+    //       <Nav id="header-tabs" className="ml-auto" navbar>
+    //         <Home />
+    //         {props.isAuthenticated && <EntitiesMenu />} {/*entity*/}
+    //         {props.isAuthenticated && props.isAdmin && (
+    //           <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} /> // quan tri
+    //         )}
+    //         <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} /> {/*ngon ngu*/}
+    //         <AccountMenu isAuthenticated={props.isAuthenticated} /> {/*tai khoan*/}
+    //       </Nav>
+    //     </Collapse>
+    //   </Navbar>
+    // </div>
     <div id="app-header">
-      {renderDevRibbon()}
-      <LoadingBar className="loading-bar" />
-      <Navbar light expand="sm" fixed="top" className="bg-light">
-        <NavbarToggler aria-label="Menu" onClick={toggleMenu} />
-        <Brand />
-        <Collapse isOpen={menuOpen} navbar>
-          <Nav id="header-tabs" className="ml-auto" navbar>
-            <Home />
-            {props.isAuthenticated && <EntitiesMenu />}
+     {/*{ renderDevRibbon()}*/}
+      {/*<LoadingBar className="loading-bar" />*/}
+      <Navbar fixed="top" expand="sm" className="shop-header bg-warning col-8">
+        <NavbarToggler aria-label="menu" onClick={toggleMenu} />
+        <Brand/>
+        <Collapse id="header-tabs" isOpen={menuOpen} navbar>
+          <Nav className="ml-auto " navbar>
+            <Home/>
+            <Introduction/>
+            <Product/>
+            <Contact/>
+            {props.isAuthenticated && <EntitiesMenu />} {/*entity*/}
             {props.isAuthenticated && props.isAdmin && (
-              <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} />
+              <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} /> // quan tri
             )}
-            <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} />
-            <AccountMenu isAuthenticated={props.isAuthenticated} />
+            <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} /> {/*ngon ngu*/}
+            <AccountMenu isAuthenticated={props.isAuthenticated} /> {/*tai khoan*/}
           </Nav>
         </Collapse>
       </Navbar>
+
     </div>
-  );
+);
 };
 
 export default Header;
