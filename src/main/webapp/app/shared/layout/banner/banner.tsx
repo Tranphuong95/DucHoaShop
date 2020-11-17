@@ -6,7 +6,7 @@ import { Col, Row } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {faTruck,faCartArrowDown, faAward,faThumbsUp,faHandHoldingUsd} from '@fortawesome/free-solid-svg-icons'
+import {faTruck,faCartArrowDown, faAward,faThumbsUp,faHandHoldingUsd} from '@fortawesome/free-solid-svg-icons';
 
 
 const Banner = props => (

@@ -21,6 +21,7 @@ import AppRoutes from 'app/routes';
 import Banner from "app/shared/layout/banner/banner";
 import Visible from "app/shared/layout/visible/visible";
 import {ListProducts} from "app/shared/layout/group-list-products/list-products";
+import Home from "app/modules/home/home";
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
@@ -50,8 +51,8 @@ export const App = (props: IAppProps) => {
           />
           <Banner/>
           <Visible/>
-          <AppRoutes /> {/*ban đầu không có ở đây*/}
           <ListProducts/>
+          <AppRoutes />
         </ErrorBoundary>
         {/*<div className="container-fluid view-container" id="app-view-container">*/}
         {/*  <Card className="jh-card">*/}

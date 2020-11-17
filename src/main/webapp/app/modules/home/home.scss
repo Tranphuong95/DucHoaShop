@@ -8,3 +8,15 @@ Main page styles
   background: url('../../../content/images/jhipster_family_member_2.svg') no-repeat center top;
   background-size: contain;
 }
+.home-content {
+  .home-container {
+    section {
+      hr {
+        font-weight: bold;
+        height: 2px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
