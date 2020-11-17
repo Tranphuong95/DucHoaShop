@@ -8,19 +8,21 @@ export const VisibleList = (props) => {
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
   return (
-    <Dropdown isOpen={dropdownOpen} toggle={toggle} className="my-2 mr-1">
-      <DropdownToggle caret className="dropdown-toggle btn-secondary" >
-        Chọn danh mục
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem header>Chọn danh mục</DropdownItem>
-        <DropdownItem>Đồ gỗ nội thất 1</DropdownItem>
-        <DropdownItem>Đồ gỗ nội thất 2</DropdownItem>
-        <DropdownItem>Đồ gỗ nội thất 3</DropdownItem>
-        <DropdownItem>Đồ gỗ nội thất 4</DropdownItem>
-        <DropdownItem>Đồ gỗ nội thất 5</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+    <div className="d-none d-sm-none d-md-block d-lg-block d-xl-block">
+      <Dropdown isOpen={dropdownOpen} toggle={toggle} className="my-2 mr-1">
+        <DropdownToggle caret className="dropdown-toggle btn-secondary" >
+          Chọn danh mục
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem header>Chọn danh mục</DropdownItem>
+          <DropdownItem>Đồ gỗ nội thất 1</DropdownItem>
+          <DropdownItem>Đồ gỗ nội thất 2</DropdownItem>
+          <DropdownItem>Đồ gỗ nội thất 3</DropdownItem>
+          <DropdownItem>Đồ gỗ nội thất 4</DropdownItem>
+          <DropdownItem>Đồ gỗ nội thất 5</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </div>
   );
 }
 export const VisibleSearch=(props)=>{

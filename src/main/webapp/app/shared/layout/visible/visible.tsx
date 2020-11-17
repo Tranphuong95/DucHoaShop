@@ -10,7 +10,7 @@ import {VisibleList, VisibleSearch, WarpCart} from "app/shared/layout/visible/vi
 const Visible = props => (
   <div className="visible d-flex justify-content-center">
     <div className="visible-container d-flex bg-main-color justify-content-between col-6 col-sm-7 col-md-8 col-lg-9 col-xl-10">
-      <div className="visible-list d-flex flex-wrap align-content-center col-3">
+      <div className="visible-list d-none d-sm-none d-md-none d-lg-none d-xl-block d-xl-flex flex-wrap align-content-center col-3">
         <div className="visible-icon mr-2">
           <FontAwesomeIcon icon={faListAlt}/>
         </div>
