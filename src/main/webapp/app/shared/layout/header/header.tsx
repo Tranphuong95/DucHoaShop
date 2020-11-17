@@ -63,24 +63,28 @@ const Header = (props: IHeaderProps) => {
     //     </Collapse>
     //   </Navbar>
     // </div>
-    <div id="app-header">
-     { renderDevRibbon()}
+    <div id="app-header" className="bg-main-color d-flex justify-content-center">
+     {/*{ renderDevRibbon()}*/}
       <LoadingBar className="loading-bar" />
-      <Navbar fixed="top" expand="sm" className="shop-header bg-warning col-9">
+      <Navbar fixed="top" expand="md" light className="shop-header  col-lg-9 col-sm-11 col-md-12 col-12">
+        <NavbarBrand>
+          <Brand/>
+        </NavbarBrand>
         <NavbarToggler aria-label="menu" onClick={toggleMenu} />
-        <Brand/>
         <Collapse id="header-tabs" isOpen={menuOpen} navbar>
           <Nav className="ml-auto " navbar>
-            <Home/>
-            <Introduction/>
-            <Products/>
-            <Contact/>
-            {props.isAuthenticated && <EntitiesMenu />} {/*entity*/}
-            {props.isAuthenticated && props.isAdmin && (
+            <NavItem><Home/></NavItem>
+            <NavItem><Introduction/></NavItem>
+            <NavItem><Products/></NavItem>
+            <NavItem><Contact/></NavItem>
+            <NavItem>{props.isAuthenticated && <EntitiesMenu />}</NavItem> {/*entity*/}
+            <NavItem>
+              {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} /> // quan tri
-            )}
-            <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} /> {/*ngon ngu*/}
-            <AccountMenu isAuthenticated={props.isAuthenticated} /> {/*tai khoan*/}
+              )}
+            </NavItem>
+            <NavItem><LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} /></NavItem> {/*ngon ngu*/}
+            <NavItem><AccountMenu isAuthenticated={props.isAuthenticated} /></NavItem> {/*tai khoan*/}
           </Nav>
         </Collapse>
       </Navbar>

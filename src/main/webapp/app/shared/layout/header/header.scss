@@ -77,14 +77,13 @@ Navbar styles
 #app-header {
   width: 100%;
   height: auto;
-  background-color: #dd5600;
   .shop-header {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+    a {
+      color: #ffffff;
+      font-size: 18px;
+    }
   }
-}
-a {
-  color: white;
-  font-size: 18px;
 }

@@ -19,6 +19,8 @@ import ErrorBoundary from 'app/shared/error/error-boundary';
 import { AUTHORITIES } from 'app/config/constants';
 import AppRoutes from 'app/routes';
 import Banner from "app/shared/layout/banner/banner";
+import Visible from "app/shared/layout/visible/visible";
+import {ListProducts} from "app/shared/layout/group-list-products/list-products";
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
@@ -47,7 +49,9 @@ export const App = (props: IAppProps) => {
             isSwaggerEnabled={props.isSwaggerEnabled}
           />
           <Banner/>
+          <Visible/>
           <AppRoutes /> {/*ban đầu không có ở đây*/}
+          <ListProducts/>
         </ErrorBoundary>
         {/*<div className="container-fluid view-container" id="app-view-container">*/}
         {/*  <Card className="jh-card">*/}
