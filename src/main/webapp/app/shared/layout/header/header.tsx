@@ -66,7 +66,7 @@ const Header = (props: IHeaderProps) => {
     <div id="app-header" className="bg-main-color d-flex justify-content-center">
      {/*{ renderDevRibbon()}*/}
       <LoadingBar className="loading-bar" />
-      <Navbar fixed="top" expand="md" light className="shop-header  col-lg-9 col-sm-11 col-md-12 col-12">
+      <Navbar fixed="top" expand="md" light className="shop-header  col-lg-10 col-sm-11 col-md-12 col-12">
         <NavbarBrand>
           <Brand/>
         </NavbarBrand>
