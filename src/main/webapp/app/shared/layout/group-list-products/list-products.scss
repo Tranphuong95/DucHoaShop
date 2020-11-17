@@ -1,0 +1,20 @@
+.list-products-container {
+  padding: 0;
+  .list-products {
+    padding: 0;
+    ul {
+      a {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      a:hover {
+        background-color: #7f661b !important;
+        color: white !important;
+      }
+    }
+  }
+  //.banner-img{
+  //  margin-left: 22px;
+  //  margin-top: 22px;
+  //}
+}
