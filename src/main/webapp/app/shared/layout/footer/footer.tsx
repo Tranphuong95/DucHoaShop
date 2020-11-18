@@ -3,10 +3,7 @@ import './footer.scss';
 import React from 'react';
 import { NavLink,Table } from 'reactstrap';
 import { NavLink as Link } from 'react-router-dom';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+import Iframe from 'react-iframe'
 
 const Footer = props => (
   <div className="d-flex justify-content-center">
@@ -73,8 +70,8 @@ const Footer = props => (
             </div>
           </div>
         </div>
-        <div className="col-lg-4">
-
+        <div className="col-lg-4 mt-5 mb-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15166.769750411268!2d105.87571617925717!3d21.229681325805107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135047bc0614a7d%3A0x8df4c0918b0d724d!2zxJDhu6ljIEhvw6AsIFPDs2MgU8ahbiwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2sus!4v1605716708504!5m2!1svi!2sus" width="100%" height="100%" frameBorder="0" style={{"border":0}} allowFullScreen aria-hidden="false" ></iframe>
         </div>
       </div>
     </div>
