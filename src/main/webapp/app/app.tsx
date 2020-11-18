@@ -62,6 +62,7 @@ export const App = (props: IAppProps) => {
         {/*  </Card>*/}
         {/*  <Footer />/*/}
         {/*</div>*/}
+        <Footer/>
       </div>
     </Router>
   );

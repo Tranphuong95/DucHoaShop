@@ -1,3 +1,15 @@
 .footer {
-  height: 50px;
+  img.img-footer {
+    max-width: 200px;
+    height: auto;
+  }
+  .ifo {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    span {
+      line-height: 1.6;
+    }
+  }
 }
