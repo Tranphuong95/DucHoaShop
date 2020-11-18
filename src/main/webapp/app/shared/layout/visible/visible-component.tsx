@@ -27,11 +27,11 @@ export const VisibleList = (props) => {
 }
 export const VisibleSearch=(props)=>{
   return(
-    <Form inline>
+    <Form inline >
       <FormGroup>
         <Input type="index" name="search" id="txtSearch" placeholder="Nhập từ khóa tìm kiếm..." />
       </FormGroup>
-      <Button className="d-none d-sm-block d-md-block d-lg-block d-xl-block">Tìm kiếm</Button>
+      <Button className="d-none d-sm-block d-md-block d-lg-block d-xl-block ">Tìm kiếm</Button>
     </Form>
   )
 }

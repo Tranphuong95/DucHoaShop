@@ -14,8 +14,31 @@ Main page styles
       hr {
         font-weight: bold;
         height: 2px;
-        margin: 0;
+        margin-bottom: 20px;
         padding: 0;
+      }
+      .section-content {
+        .section-banner {
+          padding: 0;
+          a {
+            padding-left: 0;
+            padding-top: 0;
+          }
+        }
+        .section-main {
+          .price-old {
+            text-decoration: line-through;
+          }
+          a {
+            padding: 0;
+            //.btn{
+            //  background-image: none;
+            //  background-color: #009cd8 !important;
+            //  color: white;
+            //  align-content: flex-end !important;
+            //}
+          }
+        }
       }
     }
   }
