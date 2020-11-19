@@ -62,7 +62,7 @@ export const Home = (props: IHomeProp) => {
                           <div className="price-old">3.025.000 đ</div>
                           <div><Badge color="warning">-24%</Badge></div>
                         </CardText>
-                        <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
+                        <Button  color="primary"className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
                     </Card>
                   </NavLink>

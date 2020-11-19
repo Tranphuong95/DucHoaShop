@@ -1,3 +1,6 @@
+@import '~rfs/scss';
+$enable-responsive-font-sizes: true;
+
 $header-color: #fff;
 $header-color-secondary: #bbb;
 $header-color-hover: darken($header-color, 20%);
@@ -83,7 +86,7 @@ Navbar styles
     //margin-right: auto;
     a {
       color: #ffffff;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }

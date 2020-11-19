@@ -1,3 +1,4 @@
+$main-color: #7f661b;
 .list-group-products {
   background-color: #eaeaea;
   .list-products-container {
@@ -10,7 +11,7 @@
           font-size: 16px;
         }
         a:hover {
-          background-color: #7f661b !important;
+          background-color: $main-color !important;
           color: white !important;
         }
       }

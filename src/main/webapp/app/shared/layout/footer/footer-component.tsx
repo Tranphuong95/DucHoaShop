@@ -6,7 +6,7 @@ import {faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 export const ChatZalo=(props)=>{
   return(
-    <div className="social-button">
+    <div className="social-button d-none d-sm-block d-md-block d-lg-block d-xl-block">
       <div className="social-button-content">
         <a href="tel:0981481368" className="call-icon" rel="nofollow">
           <FontAwesomeIcon icon={faWhatsapp} size="3x"/>
@@ -28,11 +28,11 @@ export const ChatZalo=(props)=>{
           <span>Zalo: 098.148.1368</span>
         </a>
       </div>
-      <a className="user-support">
-        <FontAwesomeIcon icon={faUserCircle } size="3x"/>
-        {/*<div className="animated alo-circle" />*/}
-        {/*<div className="animated alo-circle-fill" />*/}
-      </a>
+      {/*<a className="user-support">*/}
+      {/*  <FontAwesomeIcon icon={faUserCircle } size="3x"/>*/}
+      {/*  <div className="animated alo-circle" />*/}
+      {/*  <div className="animated alo-circle-fill" />*/}
+      {/*</a>*/}
     </div>
   );
 };

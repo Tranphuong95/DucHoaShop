@@ -1,10 +1,12 @@
 //visible.tsx
+$main-color: #7f661b;
 .visible {
   color: white;
   .visible-container {
     padding: 0;
     .visible-list {
       font-size: 16px;
+      margin: auto 0;
     }
     .visible-list:after {
       display: block;
@@ -41,8 +43,13 @@
   border-left: 1px dotted #ccc;
   right: 0;
 }
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white !important;
+  background-color: $main-color !important;
+  outline: 2px solid #533f03 !important;
+}
 .visible-search {
-  margin-right: 10rem;
   input {
     border: none;
     margin-right: 1px;
@@ -57,11 +64,19 @@ input:focus,
 button:hover {
   outline: 2px solid deepskyblue;
 }
+.search-target {
+  padding: 0 16px;
+}
+a:hover {
+  text-decoration: none;
+}
 .warp-cart {
+  position: relative;
   .cart {
     position: relative;
     display: block;
     padding-left: 40px;
+    margin: auto 20px;
     .quantity {
       position: absolute;
       border: 2px solid green;
@@ -82,6 +97,8 @@ button:hover {
       display: block;
       color: white;
       text-decoration: none;
+      line-height: 1.6;
+      margin: auto 0;
     }
     span:hover {
     }
@@ -98,7 +115,4 @@ button:hover {
     left: 0;
     top: 2px;
   }
-}
-a:hover {
-  text-decoration: none;
 }

@@ -18,7 +18,7 @@ const Banner = props => (
           <img className="img-fluid" src="content/images/logo-shop.png" alt="logo"/>
         </Link>
       </div>
-      <div className="warp-cart d-block d-sm-block d-md-block d-lg-none d-xl-none d-flex d-sm-flex d-md-flex  flex-wrap align-content-center">
+      <div className="warp-cart d-block d-sm-none d-md-none d-lg-none d-xl-none d-flex d-sm-flex d-md-flex  flex-wrap align-content-center">
         <a href="#" title="Giỏ hàng" className="cart">
           <span className="quantity">0</span>
         </a>

@@ -305,14 +305,14 @@ Metrics and Health styles
 
 /* bootstrap 3 input-group 100% width
 http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
-
+$main-color: #7f661b;
 .width-min {
   width: 1% !important;
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
 .bg-main-color {
-  background-color: #7f661b !important;
+  background-color: $main-color !important;
 }
 .btn-secondary {
   background-color: white;
