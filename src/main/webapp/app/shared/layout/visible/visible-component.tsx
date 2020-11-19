@@ -30,8 +30,8 @@ export const VisibleListSearch=(props)=>{
 
   const toggle = () => setDropdownOpen(prevState => !prevState);
   return(
-    <Form inline >
-      <FormGroup>
+    <Form  className=" form-visible col d-flex">
+      <FormGroup className="col-auto">
         <div className="d-none d-sm-none d-md-block d-lg-block d-xl-block">
           <Dropdown isOpen={dropdownOpen} toggle={toggle} className="my-2 mr-1">
             <DropdownToggle caret className="dropdown-toggle btn-secondary" >
@@ -48,16 +48,16 @@ export const VisibleListSearch=(props)=>{
           </Dropdown>
         </div>
       </FormGroup>
-      <FormGroup>
-        <Input type="index" name="search" id="txtSearch" placeholder="Nhập từ khóa tìm kiếm..." className="d-none d-sm-none d-md-block d-lg-block d-xl-block"/>
+      <FormGroup className="col align-self-center">
+        <Input type="index" name="search" id="txtSearch" placeholder="Nhập từ khóa tìm kiếm..." className="d-none d-sm-none d-md-block d-lg-block d-xl-block "/>
       </FormGroup>
-      <Button className="d-none d-sm-none d-md-block d-lg-block d-xl-block ">Tìm kiếm</Button>
+      <Button type="submit" className="btn-search d-none d-sm-none d-md-block d-lg-block d-xl-block col-auto ">Tìm kiếm</Button>
     </Form>
   )
 }
 export const WarpCart=(props)=>{
   return(
-  	<div className="warp-cart d-none d-sm-none d-md-none d-lg-none d-xl-block d-lg-flex d-xl-flex flex-wrap align-content-center col-auto">
+  	<div className="warp-cart d-none d-sm-none d-md-none d-lg-none d-xl-block d-lg-flex d-xl-flex flex-wrap align-content-center col-3">
       <a href="#" title="Giỏ hàng" className="cart">
         <span className="quantity">0</span>
         <span>Giỏ hàng</span>
