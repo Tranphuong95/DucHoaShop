@@ -51,7 +51,7 @@ $main-color: #7f661b;
 }
 .visible-search {
   input {
-    border: none;
+    //border: none;
     margin-right: 1px;
     padding: 6px 10px;
   }
@@ -72,12 +72,16 @@ button:hover {
     .form-group {
       margin: 0;
       padding: 0;
-      input {
-      }
     }
     .btn-search {
       margin: 6px;
-      padding: 0 6px;
+      padding: 0px 6px;
+    }
+    .result-search {
+      position: absolute;
+      z-index: 999;
+      color: black;
+      background-color: white;
     }
   }
 }
