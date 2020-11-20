@@ -6,7 +6,7 @@ export const ScrollTop=(props)=>{
   window.onscroll=()=>{
     setScrollTop(document.documentElement.scrollTop || document.body.scrollTop);
   }
-  const scrollTopFuction=(event)=>{ //todo cần sửa lại
+  const scrollTopFuction=(event)=>{
     document.documentElement.scrollTop=0;
     document.body.scrollTop=0;
   }
