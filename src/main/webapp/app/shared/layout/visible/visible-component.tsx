@@ -1,6 +1,7 @@
 import './visible.scss'
 import React, { useState } from 'react';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Form,FormGroup, Input, Button} from 'reactstrap';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Form,FormGroup, Input, Button, NavLink} from 'reactstrap';
+import {NavLink as Liknk } from 'react-router-dom';
 
 export const VisibleList = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -54,7 +55,7 @@ export const VisibleListSearch=(props)=>{
         </FormGroup>
         <Button type="submit" className="btn-search d-none d-sm-none d-md-block d-lg-block d-xl-block col-auto ">Tìm kiếm</Button>
       </div>
-      <div className="result-search col"> //todo cần sủa lại bằng reactstrap thay cho bootstrap
+      <div className="result-search col"> {/*todo cần sủa lại bằng reactstrap thay cho bootstrap*/}
         <div className="row mt-2">
           <div className="col"><ResultSearch/></div>
           <div className="col"><ResultSearch/></div>
@@ -67,7 +68,7 @@ export const VisibleListSearch=(props)=>{
           <div className="col"><ResultSearch/></div>
           <div className="col"><ResultSearch/></div>
         </div>
-        <div className="float-right m-2">Xem tất cả</div>
+        <div className="float-right m-2"><NavLink tag={Liknk} to="/products">Xem tất cả</NavLink></div>
       </div>
     </Form>
   )

@@ -1,7 +1,7 @@
 import 'react-toastify/dist/ReactToastify.css';
 import './app.scss';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Card } from 'reactstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -32,7 +32,6 @@ export const App = (props: IAppProps) => {
     props.getSession();
     props.getProfile();
   }, []);
-
   const paddingTop = '60px';
   return (
     <Router basename={baseHref}>
@@ -52,7 +51,7 @@ export const App = (props: IAppProps) => {
           <Banner/>
           <Visible/>
           <ListProducts/>
-          <AppRoutes />
+          {/*<AppRoutes />*/}
         </ErrorBoundary>
         {/*<div className="container-fluid view-container" id="app-view-container">*/}
         {/*  <Card className="jh-card">*/}
