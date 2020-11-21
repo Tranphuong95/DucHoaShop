@@ -1,8 +1,6 @@
 import './footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faWhatsapp, faWeixin, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
-import {faCommentDots}from "@fortawesome/free-regular-svg-icons"
-import {faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 export const ChatZalo=(props)=>{
   return(
@@ -10,8 +8,6 @@ export const ChatZalo=(props)=>{
       <div className="social-button-content">
         <a href="tel:0981481368" className="call-icon" rel="nofollow">
           <FontAwesomeIcon icon={faWhatsapp} size="3x"/>
-          {/*<div className="animated alo-circle" />*/}
-          {/*<div className="animated alo-circle-fill  " />*/}
           <span>Hotline: 098 148 1368</span>
         </a>
         <a href="sms:0981481368" className="sms">
@@ -23,16 +19,11 @@ export const ChatZalo=(props)=>{
           <span>Nhắn tin Facebook</span>
         </a>
         <a href="http://zalo.me/0981481368" className="zalo">
-          {/*<FontAwesomeIcon icon={faCommentDots} size="3x"/>*/}
           <img src="./../../../../content/images/zalo-icon.png"/>
           <span>Zalo: 098.148.1368</span>
         </a>
       </div>
-      {/*<a className="user-support">*/}
-      {/*  <FontAwesomeIcon icon={faUserCircle } size="3x"/>*/}
-      {/*  <div className="animated alo-circle" />*/}
-      {/*  <div className="animated alo-circle-fill" />*/}
-      {/*</a>*/}
+
     </div>
   );
 };

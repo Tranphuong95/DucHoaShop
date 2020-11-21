@@ -1,11 +1,10 @@
 import './footer.scss';
 
 import React from 'react';
-import { NavLink,Table } from 'reactstrap';
+import { NavLink} from 'reactstrap';
 import { NavLink as Link } from 'react-router-dom';
 import ChatZalo from './footer-component'
-import Iframe from 'react-iframe'
-import {ScrollTop} from "app/shared/layout/scroll/scroll";
+// import {ScrollTop} from "app/shared/layout/scroll/scroll";
 
 const Footer = props => {
   return(
@@ -81,7 +80,7 @@ const Footer = props => {
         </div>
       </div>
       <div className="chat-zalo"><ChatZalo/></div>
-      <div className="scroll-top"><ScrollTop/></div>
+      {/*<div className="scroll-top"><ScrollTop/></div>*/}
     </div>
   );
 };

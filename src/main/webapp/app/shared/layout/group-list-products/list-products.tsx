@@ -1,7 +1,6 @@
 import './list-products.scss'
-import React, { useState } from 'react';
+import React from 'react';
 import {ListGroupProducts} from "app/shared/layout/group-list-products/list-group-products-component";
-import Home from "app/modules/home/home";
 import ErrorBoundaryRoute from "app/shared/error/error-boundary-route";
 import {HomeHead} from "app/modules/home/HomeHead";
 

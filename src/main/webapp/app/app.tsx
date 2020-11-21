@@ -1,7 +1,7 @@
 import 'react-toastify/dist/ReactToastify.css';
 import './app.scss';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { connect } from 'react-redux';
 import { Card } from 'reactstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -21,7 +21,6 @@ import AppRoutes from 'app/routes';
 import Banner from "app/shared/layout/banner/banner";
 import Visible from "app/shared/layout/visible/visible";
 import {ListProducts} from "app/shared/layout/group-list-products/list-products";
-import Home from "app/modules/home/home";
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
@@ -32,12 +31,10 @@ export const App = (props: IAppProps) => {
     props.getSession();
     props.getProfile();
   }, []);
-  const paddingTop = '60px';
   return (
     <Router basename={baseHref}>
-      {/*<div className="app-container" style={{ paddingTop }}>*/}
       <div className="app-container">
-        <ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />
+        {/*<ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />*/}
         <ErrorBoundary>
           <Header
             isAuthenticated={props.isAuthenticated}
@@ -51,7 +48,6 @@ export const App = (props: IAppProps) => {
           <Banner/>
           <Visible/>
           <ListProducts/>
-          {/*<AppRoutes />*/}
         </ErrorBoundary>
         <div className="container-fluid view-container" id="app-view-container">
           <Card className="jh-card">
@@ -59,9 +55,8 @@ export const App = (props: IAppProps) => {
               <AppRoutes />
             </ErrorBoundary>
           </Card>
-          {/*<Footer />/*/}
+          <Footer />
         </div>
-        <Footer/>
       </div>
     </Router>
   );

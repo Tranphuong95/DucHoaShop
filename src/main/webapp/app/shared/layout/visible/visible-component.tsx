@@ -3,29 +3,6 @@ import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Form,FormGroup, Input, Button, NavLink} from 'reactstrap';
 import {NavLink as Liknk } from 'react-router-dom';
 
-export const VisibleList = (props) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen(prevState => !prevState);
-
-  return (
-    <div className="d-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <Dropdown isOpen={dropdownOpen} toggle={toggle} className="my-2 mr-1">
-        <DropdownToggle caret className="dropdown-toggle btn-secondary" >
-          Chọn danh mục
-        </DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem header>Chọn danh mục</DropdownItem>
-          <DropdownItem>Đồ gỗ nội thất 1</DropdownItem>
-          <DropdownItem>Đồ gỗ nội thất 2</DropdownItem>
-          <DropdownItem>Đồ gỗ nội thất 3</DropdownItem>
-          <DropdownItem>Đồ gỗ nội thất 4</DropdownItem>
-          <DropdownItem>Đồ gỗ nội thất 5</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-    </div>
-  );
-}
 export const VisibleListSearch=(props)=>{
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -86,21 +63,8 @@ export const WarpCart=(props)=>{
 
 }
 
-import { Media } from 'reactstrap';
-
 export const ResultSearch = () => {
   return (
-    // <Media>
-    //   <Media left href="#">
-    //     <Media object data-src="./../../../../content/images/do_go_san_pham_1.png/64x64" alt="Generic placeholder image" />
-    //   </Media>
-    //   <Media body>
-    //     <Media heading>
-    //       THÙNG GỖ SỒI MỘC
-    //     </Media>
-    //       2000000đ
-    //   </Media>
-    // </Media>
     <div className="media border p-3">
         <img src="./../../../../content/images/do_go_san_pham_1.png" alt="John Doe" className="mr-3 mt-3" width="80px"/>
         <div className="media-body">

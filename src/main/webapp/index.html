@@ -68,6 +68,7 @@
             </div>
         </div>
     </div>
+    <button  id="scroll-button" onclick="topFunction()" >Top</button > <!--todo cần xem xét lại-->
     <noscript>
         <h1>You must enable javascript to view this page.</h1>
     </noscript>
@@ -110,5 +111,34 @@
 			});
 		});
     </script>
+<!--    them code de chay thu-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+		var mybutton = document.getElementById("scroll-button");
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("app-header").style.top = "0";
+            } else {
+                document.getElementById("app-header").style.top = "-81px";
+            }
+            prevScrollpos = currentScrollPos;
+			scrollFunction()
+        }
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+    </script>
+
 </body>
 </html>

@@ -1,7 +1,6 @@
 import './visible.scss';
 
 import React from 'react';
-import { Translate } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faListAlt} from '@fortawesome/free-solid-svg-icons'
 import { VisibleListSearch, WarpCart} from "app/shared/layout/visible/visible-component";
@@ -17,15 +16,11 @@ const Visible = props => (
         <div>DANH MỤC SẢN PHẨM</div>
       </div>
       <div className="search-target d-flex flex-wrap align-content-center ">
-        {/*<input type="text" id="search-off" size={50} placeholder="tim kiem..." className="search-hidden d-block d-sm-block d-md-none d-lg-none d-xl-none"/>*/}
         <div className="input-group d-block d-sm-block d-md-none d-lg-none d-xl-none">
           <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
         </div>
         <VisibleListSearch/>
         <WarpCart/>
-        {/*<div className="search-target d-flex flex-wrap align-content-center col-auto">*/}
-        {/*  <WarpCart/>*/}
-        {/*</div>*/}
       </div>
     </div>
   </div>

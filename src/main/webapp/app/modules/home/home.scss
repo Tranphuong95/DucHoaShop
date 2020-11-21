@@ -26,26 +26,15 @@ Main page styles
           }
         }
         .section-main {
-          .price-old {
-            text-decoration: line-through;
+          .section-product {
+            padding: 2px;
+            .price-old {
+              text-decoration: line-through;
+            }
+            a {
+              padding: 0;
+            }
           }
-          a {
-            padding: 0;
-            //.btn{
-            //  background-image: none;
-            //  background-color: #009cd8 !important;
-            //  color: white;
-            //  align-content: flex-end !important;
-            //}
-          }
-          //.btn-block{
-          //  background-image:linear-gradient(#897E0B,#97790C 60%, #7f661b)  !important;
-          //  outline: none!important;
-          //  border: none!important;
-          //}
-          //.btn-block:hover{
-          //  border: 2px solid #7F540A!important;
-          //}
         }
       }
     }
