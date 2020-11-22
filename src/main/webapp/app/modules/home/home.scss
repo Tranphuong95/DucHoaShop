@@ -40,3 +40,15 @@ Main page styles
     }
   }
 }
+.banner-img {
+  .click-handle {
+    width: 110px;
+    margin: 10px auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    padding: 5px 0 5px 5px;
+  }
+}
