@@ -34,7 +34,7 @@ export const App = (props: IAppProps) => {
   return (
     <Router basename={baseHref}>
       <div className="app-container">
-        {/*<ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />*/}
+        <ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />
         <ErrorBoundary>
           <Header
             isAuthenticated={props.isAuthenticated}
@@ -49,7 +49,7 @@ export const App = (props: IAppProps) => {
           <Visible/>
           <ListProducts/>
         </ErrorBoundary>
-        <div className="container-fluid view-container" id="app-view-container">
+        <div className="view-container" id="app-view-container">
           <Card className="jh-card">
             <ErrorBoundary>
               <AppRoutes />

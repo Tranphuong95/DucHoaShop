@@ -1,0 +1,28 @@
+/*scss cho breadcrumb*/
+.breadcrumb {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0 auto;
+}
+/*scss cho search-product*/
+.form-select {
+  padding: 0 16px 0 16px !important;
+  div {
+    select {
+      padding: 0;
+    }
+  }
+}
+.form-group {
+  margin: 0;
+  padding: 0;
+}
+.form-group-title {
+  position: relative;
+  label {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

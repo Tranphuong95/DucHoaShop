@@ -58,9 +58,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className="d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button  color="primary"className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
@@ -75,9 +75,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className=" d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
@@ -92,9 +92,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className="d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
@@ -111,9 +111,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className="d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
@@ -128,9 +128,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className=" d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>
@@ -145,9 +145,9 @@ export const Home = (props: IHomeProp) => {
                         <CardTitle tag="h5">TRỐNG GỖ CAO CẤP</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">Mã sản phẩm: TGSN20</CardSubtitle>
                         <CardText className="d-xl-flex justify-content-between">
-                          <div className="price-new">2.300.000₫</div>
-                          <div className="price-old">3.025.000 đ</div>
-                          <div><Badge color="warning">-24%</Badge></div>
+                          <span className="price-new">2.300.000₫</span>
+                          <span className="price-old">3.025.000 đ</span>
+                          <span><Badge color="warning">-24%</Badge></span>
                         </CardText>
                         <Button color="primary" className="btn-block d-none d-sm-none d-md-none d-lg-block d-xl-block">XEM THÊM CHI TIẾT</Button>
                       </CardBody>

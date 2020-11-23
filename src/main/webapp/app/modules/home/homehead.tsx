@@ -9,7 +9,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-// export const HomeHead=(props)=>{
+// export const Homehead=(props)=>{
 //
 //   return (
 //       <div className="banner-img auto">
@@ -38,7 +38,7 @@ const items = [
   }
 ];
 
-const HomeHead = (props) => {
+const Homehead = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -67,7 +67,7 @@ const HomeHead = (props) => {
         key={item.src}
       >
         <div className="banner-img">
-          <NavLink to="/login" tag={Link}>
+          <NavLink to="/" tag={Link}>
             <img className="image-cover img-fluid" src={item.src}  />
           </NavLink>
         </div>
@@ -90,4 +90,4 @@ const HomeHead = (props) => {
   );
 }
 
-export default HomeHead;
+export default Homehead;

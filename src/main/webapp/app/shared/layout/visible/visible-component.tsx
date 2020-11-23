@@ -12,19 +12,14 @@ export const VisibleListSearch=(props)=>{
       <div className="col d-flex">
         <FormGroup className="col-auto">
           <div className="d-none d-sm-none d-md-block d-lg-block d-xl-block">
-            <Dropdown isOpen={dropdownOpen} toggle={toggle} className="my-2 mr-1">
-              <DropdownToggle caret className="dropdown-toggle btn-secondary" >
-                Chọn danh mục
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem header>Chọn danh mục</DropdownItem>
-                <DropdownItem>Đồ gỗ nội thất 1</DropdownItem>
-                <DropdownItem>Đồ gỗ nội thất 2</DropdownItem>
-                <DropdownItem>Đồ gỗ nội thất 3</DropdownItem>
-                <DropdownItem>Đồ gỗ nội thất 4</DropdownItem>
-                <DropdownItem>Đồ gỗ nội thất 5</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+            <Input type="select" name="select" id="exampleSelect" className="my-2 mr-1">
+              <option>Chọn danh mục</option>
+              <option>Đồ gỗ nội thất 1</option>
+              <option>Đồ gỗ nội thất 2</option>
+              <option>Đồ gỗ nội thất 3</option>
+              <option>Đồ gỗ nội thất 4</option>
+              <option>Đồ gỗ nội thất 5</option>
+            </Input>
           </div>
         </FormGroup>
         <FormGroup className="col align-self-center">

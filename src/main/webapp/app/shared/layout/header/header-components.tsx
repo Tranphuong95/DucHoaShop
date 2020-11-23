@@ -15,34 +15,34 @@ export const Brand = props => (
 );
 
 export const Home = props => (
-  <NavItem>
+  // <NavItem>
     <NavLink tag={Link} to="/" className="d-flex align-items-center">
       <FontAwesomeIcon icon="home" />
       <span>
         <Translate contentKey="global.menu.home">Home</Translate>
       </span>
     </NavLink>
-  </NavItem>
+  // </NavItem>
 );
 //test
 export const Introduction=props=>(
-  <NavItem>
+  // <NavItem>
     <NavLink tag={Link} to="/introduce" className="d-flex align-items-center">
       <Translate contentKey="global.menu.introduce">Introduce</Translate>
     </NavLink>
-  </NavItem>
+  // </NavItem>
 );
 export const Products=props=>(
-  <NavItem>
+  // <NavItem>
     <NavLink tag={Link} to="/products" className="d-flex align-items-center">
       <Translate contentKey="global.menu.products">Products</Translate>
     </NavLink>
-  </NavItem>
+  // </NavItem>
 );
 export const Contact=props=>(
-  <NavItem>
+  // <NavItem>
     <NavLink tag={Link} to="/contact" className="d-flex align-items-center">
       <Translate contentKey="global.menu.contact">Contact</Translate>
     </NavLink>
-  </NavItem>
+  // </NavItem>
 )

@@ -47,9 +47,9 @@ const Header = (props: IHeaderProps) => {
      { renderDevRibbon()}
       <LoadingBar className="loading-bar" />
       <Navbar fixed="top" expand="md" light className="shop-header  col-12 col-sm-11 -col-md-10 col-lg-10 col-xl-10">
-        <NavbarBrand>
+        {/*<NavbarBrand>*/}
           <Brand/>
-        </NavbarBrand>
+        {/*</NavbarBrand>*/}
         <NavbarToggler aria-label="menu" onClick={toggleMenu} />
         <Collapse id="header-tabs" isOpen={menuOpen} navbar>
           <Nav className="ml-auto " navbar>
@@ -57,14 +57,20 @@ const Header = (props: IHeaderProps) => {
             <NavItem><Introduction/></NavItem>
             <NavItem><Products/></NavItem>
             <NavItem><Contact/></NavItem>
-            <NavItem>{props.isAuthenticated && <EntitiesMenu />}</NavItem> {/*entity*/}
-            <NavItem>
+            {/*<NavItem>*/}
+              {props.isAuthenticated && <EntitiesMenu />}
+            {/*</NavItem>*/}        {/*entity/*/}
+            {/*<NavItem>*/}
               {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} /> // quan tri
               )}
-            </NavItem>
-            <NavItem><LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} /></NavItem> {/*ngon ngu*/}
-            <NavItem><AccountMenu isAuthenticated={props.isAuthenticated} /></NavItem> {/*tai khoan*/}
+            {/*</NavItem>*/}
+            {/*<NavItem>*/}
+              <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} />
+            {/*</NavItem> */}{/*ngon ngu*/}
+            {/*<NavItem>*/}
+              <AccountMenu isAuthenticated={props.isAuthenticated} />
+            {/*</NavItem> */} {/*tai khoan*/}
           </Nav>
         </Collapse>
       </Navbar>

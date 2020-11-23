@@ -65,7 +65,7 @@ button:hover {
   outline: 2px solid deepskyblue;
 }
 .search-target {
-  padding: 0 16px;
+  //padding: 0 16px;
   width: 100%;
   .form-visible {
     padding: 0;
@@ -83,6 +83,13 @@ button:hover {
       z-index: 999;
       color: black;
       background-color: white;
+    }
+  }
+  .input-group {
+    input {
+      border: 1px solid $main-color;
+      border-radius: 5px;
+      background-color: #eeeeee;
     }
   }
 }
