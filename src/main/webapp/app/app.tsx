@@ -31,6 +31,7 @@ export const App = (props: IAppProps) => {
     props.getSession();
     props.getProfile();
   }, []);
+
   return (
     <Router basename={baseHref}>
       <div className="app-container">

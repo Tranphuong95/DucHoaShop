@@ -6,7 +6,7 @@ export const ProductsCarousel = (props) => {
     <div>
         <div className="container-fluid p0">
           <div className="container">
-            <div className="resCarousel" data-items="4-4-4-4" data-slide={2} data-interval={2000} data-speed={600} data-animator="lazy">
+            <div className="resCarousel" data-items="4-4-4-4" data-slide={1} data-interval={4000} data-speed={1200} data-animator="lazy">
               <div className="resCarousel-inner">
                 <div className="item">
                   <div className="tile">

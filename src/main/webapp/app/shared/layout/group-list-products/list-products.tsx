@@ -4,6 +4,7 @@ import {ListGroupProducts} from "app/shared/layout/group-list-products/list-grou
 import ErrorBoundaryRoute from "app/shared/error/error-boundary-route";
 import Homehead from "app/modules/home/homehead";
 import {ProductsIndex} from "app/modules/do-go-noi-that/config-products";
+import {ProductDetail} from "app/modules/product/product-detail";
 
 export const ListProducts=(props)=>{
   return(
@@ -13,6 +14,7 @@ export const ListProducts=(props)=>{
         <div className="contain-home-head col-12 s-flex col-sm-12 col-md-12 col-lg-9 col-xl-9">
           <ErrorBoundaryRoute path="/" exact component={Homehead} />
           <ErrorBoundaryRoute path="/products" exact component={ProductsIndex} />
+          <ErrorBoundaryRoute path="/product-detail" exact component={ProductDetail} />
         </div>
       </div>
     </div>
