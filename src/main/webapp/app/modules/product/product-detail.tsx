@@ -33,8 +33,8 @@ export const ProductDetail = () => {
   },)
   return (
     <div className="product-detail">
-      <div className=" product-detail-header d-flex col-12">
-        <div className="image-product mt-3 col-6">
+      <div className=" product-detail-header d-xl-flex d-lg-flex col-12">
+        <div className="image-product mt-3  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div className="image-product-detail">
             <img className="image-cover img-fluid" src="/content/images/do_go_san_pham_1.png" alt="product-detail"/>
           </div>
@@ -56,7 +56,7 @@ export const ProductDetail = () => {
             </div>
           </div>
         </div>
-        <div className="product-description mt-3 col-6">
+        <div className="product-description mt-3 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <h5>SẢN PHẨM ĐỒ GỖ 1</h5>
           <hr/>
           <table className="col-12">

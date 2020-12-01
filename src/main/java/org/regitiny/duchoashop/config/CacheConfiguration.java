@@ -81,6 +81,9 @@ public class CacheConfiguration {
             createCache(cm, org.regitiny.duchoashop.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, org.regitiny.duchoashop.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, org.regitiny.duchoashop.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, org.regitiny.duchoashop.domain.Productdetail.class.getName(), jcacheConfiguration);
+            createCache(cm, org.regitiny.duchoashop.domain.Model.class.getName(), jcacheConfiguration);
+            createCache(cm, org.regitiny.duchoashop.domain.Productmanager.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }

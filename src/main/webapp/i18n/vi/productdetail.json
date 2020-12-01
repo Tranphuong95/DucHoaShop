@@ -1,0 +1,23 @@
+{
+  "ducHoaShopApp": {
+    "productdetail": {
+      "home": {
+        "title": "Productdetails",
+        "createLabel": "Thêm mới một Productdetail",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Productdetail",
+        "search": "Tìm Productdetail",
+        "notFound": "No Productdetails found"
+      },
+      "created": "Một Productdetail mới được tạo với định danh {{ param }}",
+      "updated": "Một Productdetail cập nhật với định danh {{ param }}",
+      "deleted": "Một Productdetail đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Productdetail {{ id }}?"
+      },
+      "detail": {
+        "title": "Productdetail"
+      },
+      "productshopcart": "Productshopcart"
+    }
+  }
+}

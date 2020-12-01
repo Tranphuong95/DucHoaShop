@@ -1,0 +1,23 @@
+{
+  "ducHoaShopApp": {
+    "productdetail": {
+      "home": {
+        "title": "Productdetails",
+        "createLabel": "Create a new Productdetail",
+        "createOrEditLabel": "Create or edit a Productdetail",
+        "search": "Search for Productdetail",
+        "notFound": "No Productdetails found"
+      },
+      "created": "A new Productdetail is created with identifier {{ param }}",
+      "updated": "A Productdetail is updated with identifier {{ param }}",
+      "deleted": "A Productdetail is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Productdetail {{ id }}?"
+      },
+      "detail": {
+        "title": "Productdetail"
+      },
+      "productshopcart": "Productshopcart"
+    }
+  }
+}

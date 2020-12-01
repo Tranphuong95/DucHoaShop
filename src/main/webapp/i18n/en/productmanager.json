@@ -1,0 +1,24 @@
+{
+  "ducHoaShopApp": {
+    "productmanager": {
+      "home": {
+        "title": "Productmanagers",
+        "createLabel": "Create a new Productmanager",
+        "createOrEditLabel": "Create or edit a Productmanager",
+        "search": "Search for Productmanager",
+        "notFound": "No Productmanagers found"
+      },
+      "created": "A new Productmanager is created with identifier {{ param }}",
+      "updated": "A Productmanager is updated with identifier {{ param }}",
+      "deleted": "A Productmanager is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Productmanager {{ id }}?"
+      },
+      "detail": {
+        "title": "Productmanager"
+      },
+      "inputTitle": "Input Title",
+      "inputInformation": "Input Information"
+    }
+  }
+}

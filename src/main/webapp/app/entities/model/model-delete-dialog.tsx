@@ -1,0 +1,70 @@
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { RouteComponentProps } from 'react-router-dom';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { Translate, ICrudGetAction, ICrudDeleteAction } from 'react-jhipster';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { IModel } from 'app/shared/model/model.model';
+import { IRootState } from 'app/shared/reducers';
+import { getEntity, deleteEntity } from './model.reducer';
+
+export interface IModelDeleteDialogProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> {}
+
+export const ModelDeleteDialog = (props: IModelDeleteDialogProps) => {
+  useEffect(() => {
+    props.getEntity(props.match.params.id);
+  }, []);
+
+  const handleClose = () => {
+    props.history.push('/model');
+  };
+
+  useEffect(() => {
+    if (props.updateSuccess) {
+      handleClose();
+    }
+  }, [props.updateSuccess]);
+
+  const confirmDelete = () => {
+    props.deleteEntity(props.modelEntity.id);
+  };
+
+  const { modelEntity } = props;
+  return (
+    <Modal isOpen toggle={handleClose}>
+      <ModalHeader toggle={handleClose}>
+        <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
+      </ModalHeader>
+      <ModalBody id="ducHoaShopApp.model.delete.question">
+        <Translate contentKey="ducHoaShopApp.model.delete.question" interpolate={{ id: modelEntity.id }}>
+          Are you sure you want to delete this Model?
+        </Translate>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={handleClose}>
+          <FontAwesomeIcon icon="ban" />
+          &nbsp;
+          <Translate contentKey="entity.action.cancel">Cancel</Translate>
+        </Button>
+        <Button id="jhi-confirm-delete-model" color="danger" onClick={confirmDelete}>
+          <FontAwesomeIcon icon="trash" />
+          &nbsp;
+          <Translate contentKey="entity.action.delete">Delete</Translate>
+        </Button>
+      </ModalFooter>
+    </Modal>
+  );
+};
+
+const mapStateToProps = ({ model }: IRootState) => ({
+  modelEntity: model.entity,
+  updateSuccess: model.updateSuccess,
+});
+
+const mapDispatchToProps = { getEntity, deleteEntity };
+
+type StateProps = ReturnType<typeof mapStateToProps>;
+type DispatchProps = typeof mapDispatchToProps;
+
+export default connect(mapStateToProps, mapDispatchToProps)(ModelDeleteDialog);

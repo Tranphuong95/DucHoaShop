@@ -1,0 +1,24 @@
+{
+  "ducHoaShopApp": {
+    "productmanager": {
+      "home": {
+        "title": "Productmanagers",
+        "createLabel": "Thêm mới một Productmanager",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Productmanager",
+        "search": "Tìm Productmanager",
+        "notFound": "No Productmanagers found"
+      },
+      "created": "Một Productmanager mới được tạo với định danh {{ param }}",
+      "updated": "Một Productmanager cập nhật với định danh {{ param }}",
+      "deleted": "Một Productmanager đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Productmanager {{ id }}?"
+      },
+      "detail": {
+        "title": "Productmanager"
+      },
+      "inputTitle": "Input Title",
+      "inputInformation": "Input Information"
+    }
+  }
+}
