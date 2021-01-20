@@ -8,8 +8,9 @@ export const BreadCrumb = (props) => {
     <div>
       <Breadcrumb tag="nav" listTag="div">
         <BreadcrumbItem tag={Link} to="/">TRANG CHỦ</BreadcrumbItem>
-        <BreadcrumbItem tag={Link} to="/products">Đồ Gỗ NỘI THẤT</BreadcrumbItem>
-        <BreadcrumbItem active tag="span">ĐỒ GỖ NỘI THẤT 1</BreadcrumbItem>
+        {/*<BreadcrumbItem tag={Link} to="/products">ĐỒ GỖ NỘI THẤT</BreadcrumbItem>*/}
+        {/*<BreadcrumbItem active tag="span">ĐỒ GỖ NỘI THẤT 1</BreadcrumbItem>*/}
+        <BreadcrumbItem active tag={Link} to="/product">ĐỒ GỖ NỘI THẤT 1</BreadcrumbItem> {/*todo test 23/12*/}
       </Breadcrumb>
     </div>
   );

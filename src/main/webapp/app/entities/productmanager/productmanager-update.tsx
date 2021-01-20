@@ -12,7 +12,7 @@ import { IProductmanager } from 'app/shared/model/productmanager.model';
 import { convertDateTimeFromServer, convertDateTimeToServer, displayDefaultDateTime } from 'app/shared/util/date-utils';
 import { mapIdList } from 'app/shared/util/entity-utils';
 
-import {v4 as uuidv4} from "uuid"
+import {v4 as uuidv4} from "uuid";
 
 export interface IProductmanagerUpdateProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> {}
 

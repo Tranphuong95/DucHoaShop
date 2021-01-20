@@ -38,7 +38,7 @@ const items = [
   }
 ];
 
-const Homehead = (props) => {
+const HomeHead = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -90,4 +90,4 @@ const Homehead = (props) => {
   );
 }
 
-export default Homehead;
+export default HomeHead;

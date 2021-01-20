@@ -26,14 +26,14 @@ import {faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
           <hr/>
           <div className="section-content d-flex">
             <div className="section-banner d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3">
-              <NavLink to="/do-go-noi-that1" tag={Link}>
+              <NavLink to="/do-go-noi-that1/trong-go-cao-cap" tag={Link}>
                 <img className="img-fluid" src="content/images/do_go_noi_that_1.png" alt="banner"/>
               </NavLink>
             </div>
             <div className="section-main col-12col-sm-12 col-md-9 col-lg-9 col-xl-9">
               <div className="row">
                 <div className="section-product col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 pb-2">
-                  <NavLink to="/do-go-noi-that1/trong-go-cao-cap" tag={Link}>
+                  <NavLink to="/product-detail" tag={Link}>
                     <Card>
                       <CardImg top width="100%" src="/content/images/do_go_san_pham_1.png" alt="Card image cap" />
                       <CardBody>

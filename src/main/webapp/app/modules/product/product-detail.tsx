@@ -85,12 +85,12 @@ export const ProductDetail = () => {
               <td>12 tháng (lỗi nhà sản xuất)</td>
             </tr>
             <tr>
-              <th><strong>ĐỊA CHỈ</strong></th>
-              <td></td>
-            </tr>
-            <tr>
               <th><strong>PHỤ KIỆN</strong></th>
               <td>01 Chân thùng (chưa có vòi triết rượu)</td>
+            </tr>
+            <tr>
+              <th><strong>ĐỊA CHỈ</strong></th>
+              <td></td>
             </tr>
             <tr>
               <td>- Hà Nội</td>
@@ -110,7 +110,10 @@ export const ProductDetail = () => {
             </tr>
             </tbody>
           </table>
-
+          <hr/>
+          <div>
+            {/*todo shop-cart*/}
+          </div>
         </div>
       </div>
       <div className="product-detail-content">

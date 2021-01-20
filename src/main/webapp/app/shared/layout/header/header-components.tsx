@@ -32,13 +32,13 @@ export const Introduction=props=>(
     </NavLink>
   // </NavItem>
 );
-export const Products=props=>(
-  // <NavItem>
-    <NavLink tag={Link} to="/products" className="d-flex align-items-center">
-      <Translate contentKey="global.menu.products">Products</Translate>
-    </NavLink>
-  // </NavItem>
-);
+// export const Products=props=>(
+//   // <NavItem>
+//     <NavLink tag={Link} to="/products" className="d-flex align-items-center">
+//       <Translate contentKey="global.menu.products">Products</Translate>
+//     </NavLink>
+//   // </NavItem>
+// );
 export const Contact=props=>(
   // <NavItem>
     <NavLink tag={Link} to="/contact" className="d-flex align-items-center">

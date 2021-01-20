@@ -9,6 +9,7 @@ import { Navbar, Nav } from 'reactstrap';
 import { Home, Brand } from 'app/shared/layout/header/header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from 'app/shared/layout/menus';
 import Header from 'app/shared/layout/header/header';
+import ProductMenu from "app/shared/layout/menus/products";
 
 describe('Header', () => {
   let mountedWrapper;
@@ -66,6 +67,7 @@ describe('Header', () => {
     expect(nav.find(AdminMenu).length).toEqual(1);
     expect(nav.find(EntitiesMenu).length).toEqual(1);
     expect(nav.find(LocaleMenu).length).toEqual(1);
+    expect(nav.find(ProductMenu).length).toEqual(1); //todo test 23/12
 
     expect(nav.find(AccountMenu).length).toEqual(1);
     const ribbon = component.find('.ribbon.dev');
@@ -85,6 +87,7 @@ describe('Header', () => {
     expect(nav.find(AdminMenu).length).toEqual(1);
     expect(nav.find(EntitiesMenu).length).toEqual(1);
     expect(nav.find(LocaleMenu).length).toEqual(1);
+    expect(nav.find(ProductMenu).length).toEqual(1); //todo test 23/12
 
     expect(nav.find(AccountMenu).length).toEqual(1);
     const ribbon = component.find('.ribbon.dev');
@@ -95,6 +98,7 @@ describe('Header', () => {
     const nav = wrapper(userProps).find(Nav);
     expect(nav.find(AdminMenu).length).toEqual(0);
     expect(nav.find(EntitiesMenu).length).toEqual(1);
+    expect(nav.find(ProductMenu).length).toEqual(1); //todo test 23/12
     const account = nav.find(AccountMenu);
     expect(account.first().props().isAuthenticated).toEqual(true);
   });

@@ -21,6 +21,7 @@ import AppRoutes from 'app/routes';
 import Banner from "app/shared/layout/banner/banner";
 import Visible from "app/shared/layout/visible/visible";
 import {ListProducts} from "app/shared/layout/group-list-products/list-products";
+import Product from 'app/modules/product/index'
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
@@ -49,6 +50,7 @@ export const App = (props: IAppProps) => {
           <Banner/>
           <Visible/>
           <ListProducts/>
+          {/*<Product/>*/}
         </ErrorBoundary>
         <div className="view-container" id="app-view-container">
           <Card className="jh-card">

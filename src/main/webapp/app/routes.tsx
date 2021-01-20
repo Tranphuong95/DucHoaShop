@@ -14,6 +14,8 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoute from 'app/shared/error/error-boundary-route';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
+import Product from 'app/modules/product'
+import Products1 from "app/modules/do-go-noi-that/do-go-noi-that-1/do-go-noi-that-1";
 
 const Account = Loadable({
   loader: () => import(/* webpackChunkName: "account" */ 'app/modules/account'),
@@ -36,9 +38,10 @@ const Routes = () => (
       <ErrorBoundaryRoute path="/account/reset/finish/:key?" component={PasswordResetFinish} />
       <PrivateRoute path="/admin" component={Admin} hasAnyAuthorities={[AUTHORITIES.ADMIN]} />
       <PrivateRoute path="/account" component={Account} hasAnyAuthorities={[AUTHORITIES.ADMIN, AUTHORITIES.USER]} />
-      {/*<ErrorBoundaryRoute path="/" exact component={Home} />*/}
+      <ErrorBoundaryRoute path="/" exact component={Home} />
+      <ErrorBoundaryRoute path="/product" component={Product} />
       {/*<PrivateRoute path="/" component={Entities} hasAnyAuthorities={[AUTHORITIES.USER]} /> todo phân quyền quyền admin*/}
-      <ErrorBoundaryRoute path="/" component={Entities}/>
+      <ErrorBoundaryRoute path="/" component={Entities}  />
       <ErrorBoundaryRoute component={PageNotFound} />
     </Switch>
   </div>

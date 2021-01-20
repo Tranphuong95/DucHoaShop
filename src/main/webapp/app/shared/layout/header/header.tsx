@@ -7,10 +7,9 @@ import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse, NavItem } from 'reac
 
 import LoadingBar from 'react-redux-loading-bar';
 
-import {Home, Brand, Products, Contact, Introduction} from './header-components';
-import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from '../menus';
+import {Home, Brand, Contact, Introduction} from './header-components';
+import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu, ProductMenu } from '../menus';
 import value from "*.json";
-import Product from "app/shared/layout/menus/products";
 
 export interface IHeaderProps {
   isAuthenticated: boolean;
@@ -56,16 +55,13 @@ const Header = (props: IHeaderProps) => {
           <Nav className="ml-auto " navbar>
             <NavItem><Home/></NavItem>
             <NavItem><Introduction/></NavItem>
-            <NavItem><Products/></NavItem>
+            <NavItem><ProductMenu/></NavItem>
             <NavItem><Contact/></NavItem>
+            <NavItem>
+              {props.isAuthenticated && props.isAdmin && <EntitiesMenu />}
+            </NavItem>       {/*entity*/}
             {/*<NavItem>*/}
-              {props.isAuthenticated && <EntitiesMenu />}
-            {/*</NavItem>*/}        {/*entity/*/}
-            {/*<NavItem>*/}
-
-            {props.isAuthenticated && props.isAdmin && (<Product/>)} {/*test thu hom 26/11*/}
-
-              {props.isAuthenticated && props.isAdmin && (
+            {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} /> // quan tri
               )}
             {/*</NavItem>*/}

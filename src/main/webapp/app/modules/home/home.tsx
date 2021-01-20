@@ -51,7 +51,8 @@ export const Home = (props: IHomeProp) => {
             <div className="section-main col-12col-sm-12 col-md-9 col-lg-9 col-xl-9">
               <div className="row">
                 <div className="section-product col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 pb-2">
-                  <NavLink to="/do-go-noi-that1/trong-go-cao-cap" tag={Link}>
+                  {/*<NavLink to="/product-detail" tag={Link}>*/}
+                    <NavLink to="/" tag={Link}>
                     <Card>
                       <CardImg top width="100%" src="/content/images/do_go_san_pham_1.png" alt="Card image cap" />
                       <CardBody>
